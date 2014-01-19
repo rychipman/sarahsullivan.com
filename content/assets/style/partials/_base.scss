@@ -17,20 +17,46 @@ $white: #FFF;
 
 $nav-height: 60px;
 $title-font-size: 1.35*$column-width;
+$headline-font-size: .6*$column-width;
+$section-font-size: .5*$column-width;
+$body-font-size: .3*$column-width;
 $nav-tab-font-size: .45*$column-width; 
 $nav-tab-radius: $nav-height/2;
 
 /* Other */
 
-$fonts: Allura, Dancingscript;
+$fonts: Marie, Allura, Dancingscript;
 
 @include font-face(Allura, font-files("/assets/fonts/allura.woff", "/assets/fonts/allura.eot", "/assets/fonts/allura.ttf", "/assets/fonts/allura.svg"));
 @include font-face(Dancingscript, font-files("/assets/fonts/dancingscript.woff", "/assets/fonts/dancingscript.eot", "/assets/fonts/dancingscript.ttf", "/assets/fonts/dancingscript.svg"));
+@include font-face(Marie, font-files("/assets/fonts/StMarie-Thin-webfont.woff", "/assets/fonts/StMarie-Thin-webfont.eot", "/assets/fonts/StMarie-Thin-webfont.ttf", "/assets/fonts/StMarie-Thin-webfont.svg"));
+
+@mixin content-box {
+	background-color: $white;
+	text-align: center;
+	padding: 0 2em 1em 2em;
+	@include border-radius($nav-tab-radius);
+	h1 {
+		font-size: $headline-font-size;
+		padding-top: .4em;
+		padding-bottom: .4em;
+	}
+	h2 {
+		font-size: $section-font-size;
+	}
+	p {
+		font-size: $body-font-size;
+		padding-top: .2em;
+		padding-bottom: .6em;
+	}
+}
 
 body {
+	@include border-box-sizing;
 	background-color: $pink;
 	text-align: center;
 	font-family: $fonts;
+	font-weight: 800;
 	color: $pink;
 	.page {
 		@include container($total-columns);
@@ -38,12 +64,11 @@ body {
 		// background-color: $light-gray;
 		padding-bottom: 2.5em;
 		header {
-			padding-top: 1em;
+			padding: 1em;
 			nav {
 				@include span-columns(8);
 				@include push(4);
-				@include border-right-radius($nav-tab-radius);
-				@include border-left-radius($nav-tab-radius);
+				@include border-radius($nav-tab-radius);
 				background-color: $white;
 				height: $nav-height;
 				clear: both;
@@ -70,13 +95,16 @@ body {
 				}
 			}
 		}
-		.main {
+		#content {
+			padding-top: 2em;
 			@include span-columns(10,16);
 			@include push(3);
-			padding-top: 2em;
-			img {
-				max-height: 100%;
-				max-width: 100%;
+			.main {
+				@include content-box;
+				img {
+					max-height: 100%;
+					max-width: 100%;
+				}
 			}
 		}
 		.sidebar {
@@ -92,4 +120,8 @@ body {
 
 a {
 	color: $pink;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
