@@ -20,6 +20,7 @@ unless defined? LOADED_DEFAULT_CONFIG
 end
 
 require 'susy'
+require 'RMagick'
 
 ### Routing ##################################################################
 
@@ -100,7 +101,8 @@ compile '*' do
   when 'basic'
     filter :rdiscount
   end
-  filter :kramdown;
+  filter :erb
+  filter :kramdown
   if item.identifier == '/release-notes/'
     filter :link_github_issues
   end

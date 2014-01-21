@@ -125,3 +125,13 @@ a {
 		text-decoration: underline;
 	}
 }
+
+object {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+iframe {
+	border: 0;
+	scrolling: no;
+}

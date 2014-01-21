@@ -61,6 +61,7 @@ GEM
     rdiscount (2.1.7)
     rdoc (4.1.1)
       json (~> 1.4)
+    rmagick (2.13.2)
     rubyforge (2.0.4)
       json_pure (>= 1.1.7)
     rubypants (0.2.0)
@@ -89,6 +90,7 @@ DEPENDENCIES
   nokogiri
   rainpress
   rdiscount
+  rmagick
   rubypants
   susy
   systemu
