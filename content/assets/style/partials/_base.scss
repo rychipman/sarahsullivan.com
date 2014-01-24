@@ -126,12 +126,6 @@ a {
 	}
 }
 
-object {
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
-iframe {
-	border: 0;
-	scrolling: no;
+ul {
+	list-style-position: inside;
 }

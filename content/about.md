@@ -1,16 +1,6 @@
-Big heading
-===========
+About
+=====
 
-Smaller heading
----------------
+Sarah is a sophomore at the Rhode Island School of Design pursuing a BFA in Apparel Design.
 
-Testing some content here. Writing a paragraph paragraph paragraph paragraph paragraph paragraph.
-
-Another paragraph!
-
->blockquote here. Blocky
->blocky blocky blocky
-
-- bullet 1
-- bullet 2
-- bullet 3
+A creative thinker with a strong sense of style and of self, she is a hard, self-motivated worker who can be counted on to both come up with creative solutions and meet deadlines.
