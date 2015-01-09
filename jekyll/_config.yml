@@ -7,14 +7,6 @@ baseurl: ""
 url: "http://sarahsullivan.com"
 
 # Build settings
-source: source
-destination: build
-
-layouts: source/_layouts
-plugins: source/_plugins
-
-sass:
-  sass_dir: assets/style/partials
 
 markdown: kramdown
 
@@ -26,3 +18,5 @@ defaults:
       type: 'pages'
     values:
       layout: 'default'
+
+permalink: pretty

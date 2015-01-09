@@ -1,0 +1,61 @@
+
+$pink: #ee5789;
+
+h1 {
+    color: $pink;
+    font-family: "Archer-Medium";
+    font-size: 6em;
+}
+
+.site-title {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%);
+}
+
+nav {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%);
+
+   .nav-item {
+      display: inline-block;
+      width: 10em;
+      text-align: center;
+      font-family: "Archer-Book";
+      &:hover {
+         font-weight: bold;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+      }
+   }
+}
+
+header {
+   
+}
+
+#article-content {
+   font-family: "Archer-Book";
+
+   h1 {
+      font-family: "Archer-Medium";
+      font-size: 3em;
+   }
+
+   img#resume {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      right: -50%;
+      transform: translate(-50%);
+   }
+}
+
