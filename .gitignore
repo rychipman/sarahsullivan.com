@@ -1,3 +1,5 @@
 *.log
 output
 tmp
+_site
+.sass-cache
