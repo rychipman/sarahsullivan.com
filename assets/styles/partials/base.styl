@@ -1,0 +1,70 @@
+
+h1
+    color $pink
+    font-family "Archer-Medium"
+    font-size 6em
+    margin 0
+
+    a
+       color $pink
+       &hover
+          text-decoration none
+          color $pink
+       &visited
+          color $pink
+
+.site-title
+   position absolute
+   top 30%
+   left 50%
+   margin-right -50%
+   transform translate(-50%)
+
+nav
+   top calc(30% + 8em)
+   position absolute
+   left 50%
+   margin-right -50%
+   transform translate(-50%)
+
+   .nav-item
+      display inline-block
+      text-align center
+      font-family "Archer-Book"
+      width 10em
+      &hover
+         font-weight bold
+
+      a
+         text-decoration none
+         color black
+
+header
+   text-align center
+   margin-bottom 2em
+
+   h1
+      font-size 5em
+
+   nav
+      top 6.5em
+      .nav-item
+         width 8em
+
+#article-content
+   font-family "Archer-Book"
+   border 5px solid $pink
+   text-align center
+   padding 1em
+   width 40%
+   position relative
+   left 50%
+   right -50%
+   transform translate(-50%)
+
+   h1
+      font-family "Archer-Medium"
+      font-size 3em
+
+   img#resume
+      width 80em

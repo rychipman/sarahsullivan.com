@@ -19,4 +19,10 @@ defaults:
     values:
       layout: 'default'
 
+stylus:
+  compress: true
+  path: './assets/styles'
+
+sass_dir: './assets/styles/partials'
+
 permalink: pretty
