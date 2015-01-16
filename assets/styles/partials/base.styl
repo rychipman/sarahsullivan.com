@@ -1,12 +1,10 @@
 
 body
-    //edit()
+    edit()
 
 h1
-    margin 1rem
     color $pink
     font-family "Archer-Medium"
-    font-size 6em
     text-align center
     font-weight normal
     > a
@@ -22,20 +20,36 @@ div.home
 
 div.title
     cf()
-    > h1 a
-        span(1/2)
-        shift(1/4)
+    > h1
+        margin 1rem
+        font-size 7.5rem
+        line-height 7.5rem
+        +below(1240px)
+            font-size 6.5rem
+            line-height 6.5rem
+        > a
+            span(1/2)
+            shift(1/4)
+            +below(1050px)
+                span(1)
+                shift(0)
 
 div.nav
     span(3/7)
     shift(2/7)
-    margin-top .7em
+    +below(1050px)
+        span(6/7)
+        shift(1/14)
+    margin-top 1rem
     overflow hidden
     > .nav-item
         span(1/4 3/7)
         text-align center
         font-family "Archer-Book"
-        font-size 1.3em
+        font-size 1.7rem
+        +below(1050px)
+            span(1/4 6/7)
+            text-align center
         &:hover
             font-weight bold
         > a
@@ -49,12 +63,15 @@ div.nav
     font-family "Archer-Book"
     border 5px solid $pink
     margin-top 2rem
-    padding 0 2rem 1rem 2rem
+    padding 1rem 2rem 1rem 2rem
     text-align center
-    font-size 1.1em
     overflow hidden
+    +below(1050px)
+        span(6/7)
+        shift(1/14)
     > h1
         center()
-        font-size 3em
     > img#resume
         span(1 7/12)
+        +below(1050px)
+            span(1 6/7)
